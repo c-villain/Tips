@@ -1,6 +1,7 @@
 # Tips
 
 [![Latest release](https://img.shields.io/github/v/release/c-villain/Tips?color=brightgreen&label=version)](https://github.com/c-villain/Tips/releases/latest)
+[![](https://img.shields.io/badge/SPM-supported-DE5C43.svg?color=brightgreen)](https://swift.org/package-manager/)
 
 ## Requirements
 
