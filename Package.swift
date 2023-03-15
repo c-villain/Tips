@@ -25,7 +25,7 @@ let package = Package(
         ,.target(
             name: "CloudtipsWrapper",
             dependencies: [
-                .target(name: "Cloudtips"),
+                .target(name: "CloudtipsSDK"),
                 .target(name: "Cloudpayments"),
                 .target(name: "CloudpaymentsNetworking"),
                 .target(name: "ReCaptcha"),
@@ -67,7 +67,7 @@ let package = Package(
             path: "XPlatPaySDK/Wrapper"
         )
         ,.binaryTarget(
-            name: "Cloudtips",
+            name: "CloudtipsSDK",
             url: "https://github.com/c-villain/Tips/releases/download/1.2.4/Cloudtips.xcframework.zip",
             checksum: "f6ae14d8450618354fda6160f31cb51d96ffd1dd39083f710dd641368700fcc3"
         )
