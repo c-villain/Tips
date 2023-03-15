@@ -9,7 +9,7 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "Tips",
+            name: "Cloudtips",
             targets: ["CloudtipsTarget"]),
     ],
     dependencies: [
@@ -26,7 +26,7 @@ let package = Package(
                 .target(name: "SDWebImage"),
                 .target(name: "SnapKit"),
             ],
-            path: "Cloudtips" // contains an empty file
+            path: "CloudtipsWrapper"
         )
         ,.target(
             name: "YandexPaySDKTarget",
@@ -35,14 +35,14 @@ let package = Package(
                 .target(name: "XPlatPaySDKTarget"),
                 .target(name: "YandexLoginSDK"),
             ],
-            path: "YandexPaySDK" // contains an empty file
+            path: "YandexPaySDKWrapper"
         )
         ,.target(
             name: "XPlatPaySDKTarget",
             dependencies: [
                 .target(name: "PromiseKit"),
             ],
-            path: "XPlatPaySDK" // contains an empty file
+            path: "XPlatPaySDKWrapper"
         )
         ,.binaryTarget(
             name: "Cloudtips",
