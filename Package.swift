@@ -1,0 +1,29 @@
+// swift-tools-version:5.3
+
+import PackageDescription
+
+let package = Package(
+    name: "Cloudtips",
+    platforms: [
+        .iOS(.v12),
+    ],
+    products: [
+        .library(
+            name: "Cloudtips",
+            targets: ["Cloudtips"]),
+    ],
+    dependencies: [
+    ],
+    targets: [
+        .binaryTarget(
+            name: "Cloudtips",
+            url: "https://github.com/c-villain/Tips/releases/download/1.2.4/Cloudtips.xcframework.zip",
+            checksum: "f985f90ec42d83ffb9fbcd1979ae6f53042cdfd80951de6c292125083ca3e30b"
+        ),
+        .binaryTarget(
+            name: "Cloudtips",
+            path: "Cloudtips.xcframework"
+        )
+    ]
+)
+
