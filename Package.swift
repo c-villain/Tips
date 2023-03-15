@@ -18,6 +18,13 @@ let package = Package(
         .target(
             name: "CloudtipsTarget",
             dependencies: [
+                .target(name: "CloudtipsWrapper")
+            ],
+            path: "Cloudtips/Target"
+        )
+        ,.target(
+            name: "CloudtipsWrapper",
+            dependencies: [
                 .target(name: "Cloudtips"),
                 .target(name: "Cloudpayments"),
                 .target(name: "CloudpaymentsNetworking"),
@@ -26,23 +33,38 @@ let package = Package(
                 .target(name: "SDWebImage"),
                 .target(name: "SnapKit"),
             ],
-            path: "CloudtipsWrapper"
+            path: "Cloudtips/Wrapper"
         )
         ,.target(
             name: "YandexPaySDKTarget",
+            dependencies: [
+                .target(name: "YandexPaySDKWrapper")
+            ],
+            path: "YandexPaySDK/Target"
+        )
+        ,.target(
+            name: "YandexPaySDKWrapper",
             dependencies: [
                 .target(name: "YandexPaySDK"),
                 .target(name: "XPlatPaySDKTarget"),
                 .target(name: "YandexLoginSDK"),
             ],
-            path: "YandexPaySDKWrapper"
+            path: "YandexPaySDK/Wrapper"
         )
         ,.target(
             name: "XPlatPaySDKTarget",
             dependencies: [
+                .target(name: "XPlatPaySDKWrapper")
+            ],
+            path: "XPlatPaySDK/Target"
+        )
+        ,.target(
+            name: "XPlatPaySDKWrapper",
+            dependencies: [
+                .target(name: "XPlatPaySDK"),
                 .target(name: "PromiseKit"),
             ],
-            path: "XPlatPaySDKWrapper"
+            path: "XPlatPaySDK/Wrapper"
         )
         ,.binaryTarget(
             name: "Cloudtips",
