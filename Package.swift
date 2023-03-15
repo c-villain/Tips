@@ -9,7 +9,7 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "Tips",
+            name: "Cloudtips",
             targets: ["CloudtipsTarget"]),
     ],
     dependencies: [
