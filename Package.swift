@@ -3,13 +3,13 @@
 import PackageDescription
 
 let package = Package(
-    name: "Cloudtips",
+    name: "Tips",
     platforms: [
         .iOS(.v12),
     ],
     products: [
         .library(
-            name: "Cloudtips",
+            name: "Tips",
             targets: ["Cloudtips"]),
     ],
     dependencies: [
