@@ -8,7 +8,7 @@
 
 ## Swift Package Manager
 
-To integrate Tips into your project using SwiftPM do this 👇🏻
+To integrate `Tips` into your project using SwiftPM do this 👇🏻
 
 - File > Swift Packages > Add Package Dependency
 - Add `https://github.com/c-villain/Tips.git`
