@@ -9,7 +9,7 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "Cloudtips",
+            name: "CloudtipsSPM",
             targets: ["CloudtipsTarget"]),
     ],
     dependencies: [
@@ -18,14 +18,7 @@ let package = Package(
         .target(
             name: "CloudtipsTarget",
             dependencies: [
-                .target(name: "CloudtipsWrapper")
-            ],
-            path: "Cloudtips/Target"
-        )
-        ,.target(
-            name: "CloudtipsWrapper",
-            dependencies: [
-                .target(name: "CloudtipsSDK"),
+                .target(name: "Cloudtips"),
                 .target(name: "Cloudpayments"),
                 .target(name: "CloudpaymentsNetworking"),
                 .target(name: "ReCaptcha"),
@@ -33,41 +26,27 @@ let package = Package(
                 .target(name: "SDWebImage"),
                 .target(name: "SnapKit"),
             ],
-            path: "Cloudtips/Wrapper"
+            path: "CloudtipsWrapper"
         )
         ,.target(
             name: "YandexPaySDKTarget",
-            dependencies: [
-                .target(name: "YandexPaySDKWrapper")
-            ],
-            path: "YandexPaySDK/Target"
-        )
-        ,.target(
-            name: "YandexPaySDKWrapper",
             dependencies: [
                 .target(name: "YandexPaySDK"),
                 .target(name: "XPlatPaySDKTarget"),
                 .target(name: "YandexLoginSDK"),
             ],
-            path: "YandexPaySDK/Wrapper"
+            path: "YandexPaySDKWrapper"
         )
         ,.target(
             name: "XPlatPaySDKTarget",
             dependencies: [
-                .target(name: "XPlatPaySDKWrapper")
-            ],
-            path: "XPlatPaySDK/Target"
-        )
-        ,.target(
-            name: "XPlatPaySDKWrapper",
-            dependencies: [
                 .target(name: "XPlatPaySDK"),
                 .target(name: "PromiseKit"),
             ],
-            path: "XPlatPaySDK/Wrapper"
+            path: "XPlatPaySDKWrapper"
         )
         ,.binaryTarget(
-            name: "CloudtipsSDK",
+            name: "Cloudtips",
             url: "https://github.com/c-villain/Tips/releases/download/1.2.4/Cloudtips.xcframework.zip",
             checksum: "f6ae14d8450618354fda6160f31cb51d96ffd1dd39083f710dd641368700fcc3"
         )
