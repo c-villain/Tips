@@ -85,11 +85,11 @@ let package = Package(
             url: "https://github.com/c-villain/Tips/releases/download/1.2.4/YandexPaySDK.xcframework.zip",
             checksum: "49633e868a61ea7fd45fc12c2d7aef7e827ece59bd677cc44e4cb82654935735" /*"54d892ccddd6f2cc9471e4cb44904684f71882aea213c7219d941a1076bc4f21"*/
         )
-        ,.binaryTarget(
-            name: "PromiseKit",
-            url: "https://github.com/c-villain/Tips/releases/download/1.2.4/PromiseKit.xcframework.zip",
-            checksum: "f2608563a479aa2855149ba2cba39dee238c66e2af484a436148f3e6bca6268f"
-        )
+//         ,.binaryTarget(
+//             name: "PromiseKit",
+//             url: "https://github.com/c-villain/Tips/releases/download/1.2.4/PromiseKit.xcframework.zip",
+//             checksum: "f2608563a479aa2855149ba2cba39dee238c66e2af484a436148f3e6bca6268f"
+//         )
 //         ,.binaryTarget(
 //             name: "XPlatPaySDK",
 //             url: "https://github.com/c-villain/Tips/releases/download/1.2.4/XPlatPaySDK.xcframework.zip",
