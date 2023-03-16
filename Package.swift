@@ -11,8 +11,6 @@ let package = Package(
         .library(
             name: "CloudtipsSPM",
             targets: ["CloudtipsTarget"])
-        ,.library(name: "SnapKitFromTips",
-                 targets: ["SnapKit"])
     ],
     dependencies: [
     ],
