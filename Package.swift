@@ -10,7 +10,9 @@ let package = Package(
     products: [
         .library(
             name: "CloudtipsSPM",
-            targets: ["CloudtipsTarget"]),
+            targets: ["CloudtipsTarget"])
+        ,.library(name: "SnapKit",
+                 targets: ["SnapKit"])
     ],
     dependencies: [
     ],
