@@ -32,19 +32,19 @@ let package = Package(
             name: "YandexPaySDKTarget",
             dependencies: [
                 .target(name: "YandexPaySDK"),
-                .target(name: "XPlatPaySDKTarget"),
+//                .target(name: "XPlatPaySDKTarget"),
                 .target(name: "YandexLoginSDK"),
             ],
             path: "YandexPaySDKWrapper"
         )
-        ,.target(
-            name: "XPlatPaySDKTarget",
-            dependencies: [
-                .target(name: "XPlatPaySDK"),
-                .target(name: "PromiseKit"),
-            ],
-            path: "XPlatPaySDKWrapper"
-        )
+//         ,.target(
+//             name: "XPlatPaySDKTarget",
+//             dependencies: [
+//                 .target(name: "XPlatPaySDK"),
+//                 .target(name: "PromiseKit"),
+//             ],
+//             path: "XPlatPaySDKWrapper"
+//         )
         ,.binaryTarget(
             name: "Cloudtips",
             url: "https://github.com/c-villain/Tips/releases/download/1.2.4/Cloudtips.xcframework.zip",
@@ -83,18 +83,18 @@ let package = Package(
         ,.binaryTarget(
             name: "YandexPaySDK",
             url: "https://github.com/c-villain/Tips/releases/download/1.2.4/YandexPaySDK.xcframework.zip",
-            checksum: "54d892ccddd6f2cc9471e4cb44904684f71882aea213c7219d941a1076bc4f21"
+            checksum: "49633e868a61ea7fd45fc12c2d7aef7e827ece59bd677cc44e4cb82654935735" /*"54d892ccddd6f2cc9471e4cb44904684f71882aea213c7219d941a1076bc4f21"*/
         )
         ,.binaryTarget(
             name: "PromiseKit",
             url: "https://github.com/c-villain/Tips/releases/download/1.2.4/PromiseKit.xcframework.zip",
             checksum: "f2608563a479aa2855149ba2cba39dee238c66e2af484a436148f3e6bca6268f"
         )
-        ,.binaryTarget(
-            name: "XPlatPaySDK",
-            url: "https://github.com/c-villain/Tips/releases/download/1.2.4/XPlatPaySDK.xcframework.zip",
-            checksum: "84b50e46112cebd5569993a4ca67168bf92f49a5fa18e35dd32119496d98055c"
-        )
+//         ,.binaryTarget(
+//             name: "XPlatPaySDK",
+//             url: "https://github.com/c-villain/Tips/releases/download/1.2.4/XPlatPaySDK.xcframework.zip",
+//             checksum: "84b50e46112cebd5569993a4ca67168bf92f49a5fa18e35dd32119496d98055c"
+//         )
     ]
 )
 
